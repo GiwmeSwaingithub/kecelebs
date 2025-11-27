@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Trending Kenyan Celebrities</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #34a853;
+            --accent-color: #fbbc05;
+            --text-color: #333;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e8eaed;
+            --dark-gray: #5f6368;
+            --white: #ffffff;
+            --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+        
+        .logo-icon {
+            color: var(--secondary-color);
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+            background-color: var(--light-gray);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .no-data-badge {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+        
+        .content {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+        
+        .section h3 {
+            color: var(--dark-gray);
+            margin: 20px 0 10px;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+        }
+        
+        .section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 10px;
+        }
+        
+        .section li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: -10px;
+        }
+        
+        .highlight-box {
+            background-color: var(--light-gray);
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .last-updated {
+            background-color: var(--light-gray);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .last-updated:before {
+            content: "🔄";
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            background-color: var(--white);
+            padding: 30px 0;
+            border-top: 1px solid var(--medium-gray);
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .footer-links a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .copyright {
+            color: var(--dark-gray);
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">★</span>
+                    <span>Trending Kenyan Celebrities</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Celebrities</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+            <p>We respect your privacy. Our app does not collect any personal information.</p>
+            <div class="no-data-badge">No Data Collection</div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="content">
+            <div class="last-updated">
+                Last Updated: <span id="last-updated-date">Loading...</span>
+            </div>
+            
+            <div class="section">
+                <h2>Introduction</h2>
+                <p>Welcome to Trending Kenyan Celebrities. We are committed to protecting your privacy and ensuring you have a positive experience on our app.</p>
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> Our app does not collect, store, or process any personal information from visitors. We believe in complete privacy for our users.</p>
+                </div>
+                <p>This Privacy Policy applies to Trending Kenyan Celebrities and explains our no-data-collection approach.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Information We Do NOT Collect</h2>
+                <p>To be completely transparent, here is what we do NOT collect when you visit our app:</p>
+                <ul>
+                    <li><strong>No Personal Information:</strong> We do not collect names, email addresses, phone numbers, or any other personally identifiable information.</li>
+                    <li><strong>No Tracking:</strong> We do not use cookies, tracking pixels, or any other tracking technologies.</li>
+                    <li><strong>No Analytics:</strong> We do not use analytics services that track user behavior.</li>
+                    <li><strong>No Server Logs:</strong> Our server is configured to not store IP addresses or any other connection data.</li>
+                    <li><strong>No Third-Party Data Sharing:</strong> Since we don't collect data, we have nothing to share with third parties.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>How Our app Works</h2>
+                <p>Trending Kenyan Celebrities is a static app that provides information about popular Kenyan celebrities. The content is updated daily but does not require any user interaction that would necessitate data collection.</p>
+                <p>You can browse our app anonymously without leaving any digital footprint.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Third-Party Services</h2>
+                <p>Our app does not integrate with any third-party services that might collect data on our behalf.</p>
+                <p>If our app contains links to other sites, we are not responsible for the privacy practices of those sites. We encourage you to review the privacy policies of any app you visit through our links.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Children's Privacy</h2>
+                <p>Our app is safe for users of all ages, including children. Since we do not collect any data, we do not have specific concerns about children's privacy.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Your Privacy Rights</h2>
+                <p>Since we don't collect any data, you don't need to worry about:</p>
+                <ul>
+                    <li>Requesting access to your data</li>
+                    <li>Asking us to correct your data</li>
+                    <li>Requesting deletion of your data</li>
+                    <li>Objecting to our use of your data</li>
+                    <li>Asking for data portability</li>
+                </ul>
+                <p>All these rights are automatically respected because we have no data about you.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+                <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li>By email: privacy@trendingkenyancelebs.co.ke</li>
+                    <li>By visiting this page on our app: www.trendingkenyancelebs.co.ke/contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="copyright">
+                    &copy; <span id="current-year">2023</span> Trending Kenyan Celebrities. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Set last updated date
+        const lastUpdated = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('last-updated-date').textContent = lastUpdated.toLocaleDateString('en-US', options);
+        
+        // Add subtle animation to the no-data badge
+        const badge = document.querySelector('.no-data-badge');
+        if (badge) {
+            badge.style.transition = 'transform 0.3s ease';
+            badge.addEventListener('mouseover', () => {
+                badge.style.transform = 'scale(1.05)';
+            });
+            badge.addEventListener('mouseout', () => {
+                badge.style.transform = 'scale(1)';
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
